@@ -5,7 +5,7 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
-    BRANDS << brand if BRANDS.any?(brand) == false
+    BRANDS << brand if BRANDS.any?{|x| x == brand} == false
 
   end
 
